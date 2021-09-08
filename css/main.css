@@ -1,0 +1,113 @@
+/* Variables */
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+/* Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body,
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.container {
+    padding: 0 10px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.cars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem;
+    overflow: hidden;
+}
+.car {
+    padding: 35px;
+}
+.sed {
+    background-color: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+.sed .btn {
+    color: var(--bright-orange);
+}
+.suv {
+    background-color: var(--dark-cyan);
+}
+.suv .btn {
+    color: var(--dark-cyan);
+}
+.lux {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+.lux .btn {
+    color: var(--very-dark-cyan);
+}
+img {
+    margin-bottom: 25px;
+}
+h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--very-light-gray);
+    margin-bottom: 20px;
+}
+p {
+    font-size: 15px;
+    color: var(--transparent-white);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.btn {
+    border-radius: 30px;
+    border: 2px solid var(--very-light-gray);
+    padding: 10px 20px;
+}
+.btn:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media only screen and (max-width: 768px) {
+    .cars {
+        grid-template-columns: 1fr;
+    }
+    .sed {
+        border-radius: 10px 10px 0 0;
+    }
+    .lux {
+        border-radius: 0 0 10px 10px;
+    }
+}
