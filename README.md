@@ -28,9 +28,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/E-Asem/3-column-preview-card-component-main](https://github.com/E-Asem/3-column-preview-card-component-main)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://e-asem.github.io/3-column-preview-card-component-main/](https://e-asem.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
